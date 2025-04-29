@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>HOMEPAGE</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container container">
+			<nav data-move-to=".menu__container,.header__container" class="header__nav">
+				<a href="#" class="header__link _is-active">главная</a>
+				<a href="#" class="header__link">блог</a>
+				<a href="#" class="header__link">контакты</a>
+				<a href="#" class="header__link">о нас</a>
+				<a href="#" class="header__link">страны</a>
+			</nav>
+			<a href="/" class="header__logo"><img src="img/logo.svg" alt="" class="header__logo-img" /></a>
+			<ul data-move-to=".menu__container,.header__container" class="header__lang">
+				<li class="header__lang-item">
+					<input type="radio" checked name="lang" class="header__lang-input" />
+					<span class="header__lang-txt">ru</span>
+				</li>
+				<li class="header__lang-item">
+					<input type="radio" name="lang" class="header__lang-input" />
+					<span class="header__lang-txt">en</span>
+				</li>
+			</ul>
+			<button type="button" class="header__menu-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="header__menu menu">
+			<div class="menu__container container"></div>
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<main class="main">
+			<section class="hero">
+				<div class="hero__container container">
+					<h1 class="hero__heading heading heading_xl">
+						Шагните в мир <span>открытий</span>
+					</h1>
+					<p class="hero__text">
+						За каждой дверью лежит мир бесконечных возможностей. webres travel
+						проведет вас к скрытым жемчужинам, неизведанным местам и незабываемым
+						приключениям, которые выходят за рамки обыденности. Исследуйте
+						захватывающие направления, сохраняйте избранное и начните планировать
+						путешествие всей жизни.
+					</p>
+					<a href="#" class="hero__btn btn btn_white"><span class="btn__txt">узнать больше</span></a>
+				</div>
+				<div class="hero__bg">
+					<video loop playsinline autoplay="autoplay" muted src="files/13556280_1920_1080_30fps.mp4" class="hero__video"></video>
+				</div>
+			</section>
+			<section class="destinations">
+				<div class="destinations__container container">
+					<div class="destinations__head">
+						<p class="destinations__text">
+							Шагните в мир, где необычное становится реальностью. От скрытых долин до
+							нетронутых береговых линий — это места, которые бросают вызов
+							воображению и волнуют душу. Откройте для себя самые замечательные чудеса
+							мира, тщательно отобранные, чтобы вдохновить вас на следующее
+							незабываемое путешествие.
+						</p>
+						<h2 class="destinations__heading heading">
+							Исследуйте миры <span>за пределами</span> воображения
+						</h2>
+						<div data-move-to=".destinations__bottom,.destinations__head" class="destinations__controls controls">
+							<button type="button" class="controls__btn controls__btn_prev">
+								<svg>
+									<use href="#arr-svg"></use>
+								</svg>
+							</button>
+							<button type="button" class="controls__btn controls__btn_next">
+								<svg>
+									<use href="#arr-svg"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="destinations__body">
+						<div class="destinations__slider swiper">
+							<ul class="destinations__wrapper swiper-wrapper">
+								<li class="destinations__slide destinations-card swiper-slide">
+									<a href="#" class="destinations-card__inner">
+										<div class="destinations-card__content">
+											<span class="destinations-card__subtitle">италия</span>
+										</div>
+										<div class="destinations-card__bg">
+											<img src="img/content/12.webp" alt="" class="destinations-card__bg-content" />
+										</div>
+									</a>
+								</li>
+								<li class="destinations__slide destinations-card swiper-slide">
+									<a href="#" class="destinations-card__inner">
+										<div class="destinations-card__content">
+											<span class="destinations-card__subtitle">португалия</span>
+										</div>
+										<div class="destinations-card__bg">
+											<img src="img/content/13.webp" alt="" class="destinations-card__bg-content" />
+										</div>
+									</a>
+								</li>
+								<li class="destinations__slide destinations-card swiper-slide">
+									<a href="#" class="destinations-card__inner">
+										<div class="destinations-card__content">
+											<span class="destinations-card__subtitle">польша</span>
+										</div>
+										<div class="destinations-card__bg">
+											<img src="img/content/14.webp" alt="" class="destinations-card__bg-content" />
+										</div>
+									</a>
+								</li>
+								<li class="destinations__slide destinations-card swiper-slide">
+									<a href="#" class="destinations-card__inner">
+										<div class="destinations-card__content">
+											<span class="destinations-card__subtitle">италия</span>
+										</div>
+										<div class="destinations-card__bg">
+											<img src="img/content/12.webp" alt="" class="destinations-card__bg-content" />
+										</div>
+									</a>
+								</li>
+								<li class="destinations__slide destinations-card swiper-slide">
+									<a href="#" class="destinations-card__inner">
+										<div class="destinations-card__content">
+											<span class="destinations-card__subtitle">португалия</span>
+										</div>
+										<div class="destinations-card__bg">
+											<img src="img/content/13.webp" alt="" class="destinations-card__bg-content" />
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="destinations__bottom">
+							<a href="#" class="destinations__btn btn"><span class="btn__txt">все страны</span></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="text-section">
+				<div class="text-section__container container">
+					<p class="text-section__text txt txt_xl">
+						Путешествия - это не только личные вехи или демонстрации впечатлений. Оно
+						преображает не потому, что меняет нашу сущность, а а потому, что оно
+						устанавливает связи, способные способные изменить мир. Те, кто принимает
+						всю сложность жизни - как близкой и далекой, - обретают более ясную
+						перспективу.
+					</p>
+				</div>
+			</div>
+
+			<section class="selected-article">
+				<div class="selected-article__container container">
+					<h2 class="selected-article__heading heading heading_s">
+						Отдых на природе: знакомство с дикой природой
+					</h2>
+					<p class="selected-article__text txt txt_l">
+						Представьте, что вы просыпаетесь в окружении природы, среди пышных лесов,
+						просторных саванн или тропических пляжей. Вдалеке вы видите диких
+						животных, а вечером наслаждаетесь вкусной едой из местных деликатесов,
+						приготовленных из свежих региональных ингредиентов. Такие впечатления от
+						природы в сочетании с кулинарными изысками - идеальный способ оставить
+						повседневную жизнь позади.
+					</p>
+					<a href="#" class="selected-article__btn btn"><span class="btn__txt">читать</span></a>
+				</div>
+				<div style="background-image: url(img/content/17.webp)" class="selected-article__bg"></div>
+			</section>
+
+			<div class="text-section text-section_centered">
+				<div class="text-section__container container">
+					<p class="text-section__text txt txt_xl">
+						Каждое путешествие открывает не только потрясающие пейзажи, но и
+						истории, которые формируют наше понимание мира. Выбор правильного
+						места для проживания - важнейшая часть Этот опыт позволит вам
+						отдохнуть, восстановить силы и полностью погрузиться в
+						приключение. Ищете ли вы роскошь, комфорт или неповторимый местный
+						шарм, правильный выбор правильное размещение может улучшить ваше
+						путешествие и сделать каждый момент незабываемым.
+					</p>
+				</div>
+			</div>
+			<section class="articles">
+				<div class="articles__container container">
+					<div class="articles__head">
+						<h2 class="articles__heading heading"><span>блог</span></h2>
+						<a href="#" class="articles__btn btn"><span class="btn__txt">перейти в блог</span></a>
+					</div>
+					<ul class="articles__items">
+						<li class="articles__item articles-item">
+							<div class="articles-item__inner">
+								<a href="#" class="articles-item__image-wrap">
+									<div class="articles-item__label">
+										<span class="articles-item__label-txt">путеводители</span><span class="articles-item__label-txt">сентябрь 13, 2020</span>
+									</div>
+									<img src="img/content/22.webp" alt="" class="articles-item__image" />
+								</a>
+								<a href="#" class="articles-item__heading heading heading_xs">10 недорогих путешествий, которые вы можете заказать</a>
+							</div>
+						</li>
+						<li class="articles__item articles-item">
+							<div class="articles-item__inner">
+								<a href="#" class="articles-item__image-wrap">
+									<div class="articles-item__label">
+										<span class="articles-item__label-txt">путеводители</span><span class="articles-item__label-txt">сентябрь 13, 2020</span>
+									</div>
+									<img src="img/content/25.webp" alt="" class="articles-item__image" />
+								</a>
+								<a href="#" class="articles-item__heading heading heading_xs">Самые красивые пляжи мира - отпуск вашей мечты</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<svg display="none">
+				<symbol viewBox="0 0 32 32" id="arr-svg">
+					<path d="M23.5757 15.3474L9.72953 1.5012C9.36895 1.14062 8.78482 1.14062 8.42424 1.5012C8.06366 1.86178 8.06366 2.44591 8.42424 2.80649L21.6178 16L8.42424 29.1935C8.06366 29.5541 8.06366 30.1382 8.42424 30.4988C8.60453 30.6791 8.84011 30.7692 9.07689 30.7692C9.31366 30.7692 9.54924 30.6791 9.72953 30.4988L23.5757 16.6526C23.9363 16.2921 23.9363 15.7079 23.5757 15.3474Z" fill="#1D1D1B" />
+				</symbol>
+			</svg>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container container">
+				<ul class="footer__list">
+					<li class="footer__item">
+						<span class="footer__subtitle">узнать больше</span>
+						<ul class="footer__sublist">
+							<li class="footer__txt">
+								<a href="#" class="footer__txt-content">главная</a>
+							</li>
+							<li class="footer__txt">
+								<a href="#" class="footer__txt-content">блог</a>
+							</li>
+							<li class="footer__txt">
+								<a href="#" class="footer__txt-content">контакты</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__item">
+						<span class="footer__subtitle">путешествия</span>
+						<ul class="footer__sublist">
+							<li class="footer__txt">
+								<a href="#" class="footer__txt-content">СТРАНЫ</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__item">
+						<span class="footer__subtitle">языки</span>
+						<ul class="footer__sublist">
+							<li class="footer__txt">
+								<a href="#" class="footer__txt-content">русский</a>
+							</li>
+							<li class="footer__txt">
+								<a href="#" class="footer__txt-content">английский</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__item">
+						<span class="footer__subtitle">соц сети</span>
+						<ul class="footer__sublist">
+							<li class="footer__txt">
+								<a href="#" target="_blank" class="footer__txt-content">telegram</a>
+							</li>
+							<li class="footer__txt">
+								<a href="#" target="_blank" class="footer__txt-content">whatsapp</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<span class="footer__txt footer__txt_lower">@<span class="current-year"></span> webres travel</span>
+			</div>
+		</footer>
+
+	</div>
+
+	<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script defer src="js/app.js"></script>
+
+</body>
+
+</html>

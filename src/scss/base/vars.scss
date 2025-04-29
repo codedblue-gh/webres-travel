@@ -1,0 +1,19 @@
+:root {
+  // colors
+  --c-primary: #343434;
+  --c-gray: #e4e4e4;
+
+  // font family
+  --ff-main: 'Helvetica Neue';
+
+  // font size
+
+  // typography
+  --txt-main: 300 1.3rem / 120% var(--ff-main);
+
+  // svg
+
+  @media (max-width: 49em) {
+    --txt-main: 300 3rem / 120% var(--ff-main);
+  }
+}

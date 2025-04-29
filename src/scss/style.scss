@@ -1,0 +1,36 @@
+@import 'base/vars';
+
+// ------------------------------- base styles ------------------------------
+
+// base scss
+@import 'base/set';
+@import 'base/header';
+@import 'base/footer';
+
+// common scss
+@import 'common/typo';
+@import 'common/btn';
+@import 'common/layout';
+@import 'common/option';
+@import 'common/form';
+
+.wrapper {
+  position: relative;
+}
+
+html:not(._page-loaded) {
+  overflow: hidden;
+}
+// --------------------------------------------------------------------------
+
+// sections
+@import 'sections/hero';
+@import 'sections/destinations';
+@import 'sections/selected-article';
+@import 'sections/articles';
+@import 'sections/blog-hero';
+@import 'sections/all-articles';
+@import 'sections/article-hero';
+@import 'sections/article';
+@import 'sections/contacts';
+@import 'sections/countries';

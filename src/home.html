@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{"title": "HOMEPAGE"})
+  <body>
+    @@include('html/_header.htm',{})
+    <div class="wrapper">
+      <main class="main">
+        @@include('html/hero.htm',{}) @@include('html/destinations.htm',{})
+        @@include('html/text-section.htm',{})
+        @@include('html/selected-article.htm',{})
+        <div class="text-section text-section_centered">
+          <div class="text-section__container container">
+            <p class="text-section__text txt txt_xl">
+              Каждое путешествие открывает не только потрясающие пейзажи, но и
+              истории, которые формируют наше понимание мира. Выбор правильного
+              места для проживания - важнейшая часть Этот опыт позволит вам
+              отдохнуть, восстановить силы и полностью погрузиться в
+              приключение. Ищете ли вы роскошь, комфорт или неповторимый местный
+              шарм, правильный выбор правильное размещение может улучшить ваше
+              путешествие и сделать каждый момент незабываемым.
+            </p>
+          </div>
+        </div>
+        @@include('html/articles.htm',{}) @@include('html/_svg.htm',{})
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+
+    @@include('html/_js.htm',{})
+  </body>
+</html>

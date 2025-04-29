@@ -1,0 +1,144 @@
+.blog-hero {
+  // .blog-hero__container
+
+  &__container {
+    position: relative;
+  }
+
+  // .blog-hero__slider
+
+  &__slider {
+    &.swiper {
+      overflow: visible;
+    }
+  }
+
+  // .blog-hero__wrapper
+
+  &__wrapper {
+  }
+
+  // .blog-hero__slide
+
+  &__slide {
+    &.swiper-slide {
+      padding-bottom: 3.5rem;
+
+      display: flex;
+      align-items: flex-end;
+      height: 100dvh;
+      min-height: 90rem;
+
+      color: #ffffff;
+
+      @media (max-width: 49em) {
+        padding-bottom: 15rem;
+      }
+
+      &::after {
+        content: '';
+
+        position: absolute;
+        width: 100dvw;
+        height: 100%;
+        top: 0;
+        left: -1rem;
+
+        background-color: #000000;
+
+        opacity: 0.3;
+
+        @media (max-width: 49em) {
+          left: -1.7rem;
+        }
+      }
+    }
+  }
+
+  // .blog-hero__content
+
+  &__content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 3rem;
+    width: 100%;
+
+    @media (max-width: 49em) {
+      row-gap: 5rem;
+    }
+  }
+
+  // .blog-hero__subtitle
+
+  &__subtitle {
+    font-size: 1.7rem;
+    font-weight: 400;
+
+    @media (max-width: 49em) {
+      font-size: 2.5rem;
+    }
+  }
+
+  // .blog-hero__heading
+
+  &__heading {
+    max-width: 118.2rem;
+  }
+
+  // .blog-hero__btn
+
+  &__btn {
+  }
+
+  // .blog-hero__date
+
+  &__date {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    font-size: 1.7rem;
+    font-weight: 400;
+    @media (max-width: 49em) {
+      display: none;
+    }
+  }
+
+  // .blog-hero__bg
+
+  &__bg {
+    position: absolute;
+    width: 100dvw;
+    height: 100%;
+    top: 0;
+    left: -1rem;
+
+    @media (max-width: 49em) {
+      left: -1.7rem;
+    }
+  }
+
+  // .blog-hero__bg-content
+
+  &__bg-content {
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  // .blog-hero__pagination
+
+  &__pagination {
+    &.swiper-pagination.swiper-pagination-bullets {
+      position: absolute;
+      bottom: 3.5rem;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+  }
+}

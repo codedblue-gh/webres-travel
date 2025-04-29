@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>BLOG</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container container">
+			<nav data-move-to=".menu__container,.header__container" class="header__nav">
+				<a href="#" class="header__link _is-active">главная</a>
+				<a href="#" class="header__link">блог</a>
+				<a href="#" class="header__link">контакты</a>
+				<a href="#" class="header__link">о нас</a>
+				<a href="#" class="header__link">страны</a>
+			</nav>
+			<a href="/" class="header__logo"><img src="img/logo.svg" alt="" class="header__logo-img" /></a>
+			<ul data-move-to=".menu__container,.header__container" class="header__lang">
+				<li class="header__lang-item">
+					<input type="radio" checked name="lang" class="header__lang-input" />
+					<span class="header__lang-txt">ru</span>
+				</li>
+				<li class="header__lang-item">
+					<input type="radio" name="lang" class="header__lang-input" />
+					<span class="header__lang-txt">en</span>
+				</li>
+			</ul>
+			<button type="button" class="header__menu-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="header__menu menu">
+			<div class="menu__container container"></div>
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<main class="main">
+			<section class="blog-hero">
+				<div class="blog-hero__container container">
+					<div class="blog-hero__slider swiper">
+						<ul class="blog-hero__wrapper swiper-wrapper">
+							<li class="blog-hero__slide swiper-slide">
+								<div class="blog-hero__content">
+									<span class="blog-hero__subtitle">путеводители</span>
+									<span class="blog-hero__heading heading"><span>10 недорогих путешествий, которые вы можете заказать</span></span>
+									<a href="#" class="blog-hero__btn btn btn_white"><span class="btn__txt">читать</span></a>
+									<span class="blog-hero__date">сентябрь 13, 2020</span>
+								</div>
+								<div class="blog-hero__bg">
+									<img src="img/content/9.webp" alt="" class="blog-hero__bg-content" />
+								</div>
+							</li>
+							<li class="blog-hero__slide swiper-slide">
+								<div class="blog-hero__content">
+									<span class="blog-hero__subtitle">путеводители</span>
+									<span class="blog-hero__heading heading"><span>Самые красивые пляжи мира - отпуск вашей мечты</span></span>
+									<a href="#" class="blog-hero__btn btn btn_white"><span class="btn__txt">читать</span></a>
+									<span class="blog-hero__date">сентябрь 13, 2020</span>
+								</div>
+								<div class="blog-hero__bg">
+									<img src="img/content/25.webp" alt="" class="blog-hero__bg-content" />
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="blog-hero__pagination swiper-pagination"></div>
+				</div>
+			</section>
+			<section class="all-articles">
+				<div class="all-articles__container container">
+					<div class="all-articles__head">
+						<span class="all-articles__heading heading"><span>все статьи</span></span>
+						<span class="all-articles__count heading"><span>20</span></span>
+					</div>
+					<ul class="all-articles__options">
+						<li class="all-articles__option option">
+							<input type="radio" checked name="articles" class="option__input" />
+							<span class="option__txt">все</span>
+						</li>
+						<li class="all-articles__option option">
+							<input type="radio" name="articles" class="option__input" />
+							<span class="option__txt">путеводители</span>
+						</li>
+						<li class="all-articles__option option">
+							<input type="radio" name="articles" class="option__input" />
+							<span class="option__txt">советы путешественникам</span>
+						</li>
+						<li class="all-articles__option option">
+							<input type="radio" name="articles" class="option__input" />
+							<span class="option__txt">культурный опыт</span>
+						</li>
+						<li class="all-articles__option option">
+							<input type="radio" name="articles" class="option__input" />
+							<span class="option__txt">интерестные активности</span>
+						</li>
+					</ul>
+					<ul class="all-articles__items">
+						<li class="all-articles__item articles-item">
+							<div class="articles-item__inner">
+								<a href="#" class="articles-item__image-wrap">
+									<div class="articles-item__label">
+										<span class="articles-item__label-txt">путеводители</span><span class="articles-item__label-txt">сентябрь 13, 2020</span>
+									</div>
+									<img src="img/content/3.webp" alt="" class="articles-item__image" />
+								</a>
+								<a href="#" class="articles-item__heading heading heading_xs">Отпуск на природе: познайте дикую природу и кулинарные изыски</a>
+							</div>
+						</li>
+						<li class="all-articles__item articles-item">
+							<div class="articles-item__inner">
+								<a href="#" class="articles-item__image-wrap">
+									<div class="articles-item__label">
+										<span class="articles-item__label-txt">путеводители</span><span class="articles-item__label-txt">сентябрь 13, 2020</span>
+									</div>
+									<img src="img/content/3.webp" alt="" class="articles-item__image" />
+								</a>
+								<a href="#" class="articles-item__heading heading heading_xs">Отпуск на природе: познайте дикую природу и кулинарные изыски</a>
+							</div>
+						</li>
+						<li class="all-articles__item articles-item">
+							<div class="articles-item__inner">
+								<a href="#" class="articles-item__image-wrap">
+									<div class="articles-item__label">
+										<span class="articles-item__label-txt">путеводители</span><span class="articles-item__label-txt">сентябрь 13, 2020</span>
+									</div>
+									<img src="img/content/3.webp" alt="" class="articles-item__image" />
+								</a>
+								<a href="#" class="articles-item__heading heading heading_xs">Отпуск на природе: познайте дикую природу и кулинарные изыски</a>
+							</div>
+						</li>
+						<li class="all-articles__item articles-item">
+							<div class="articles-item__inner">
+								<a href="#" class="articles-item__image-wrap">
+									<div class="articles-item__label">
+										<span class="articles-item__label-txt">путеводители</span><span class="articles-item__label-txt">сентябрь 13, 2020</span>
+									</div>
+									<img src="img/content/3.webp" alt="" class="articles-item__image" />
+								</a>
+								<a href="#" class="articles-item__heading heading heading_xs">Отпуск на природе: познайте дикую природу и кулинарные изыски</a>
+							</div>
+						</li>
+						<li class="all-articles__item articles-item">
+							<div class="articles-item__inner">
+								<a href="#" class="articles-item__image-wrap">
+									<div class="articles-item__label">
+										<span class="articles-item__label-txt">путеводители</span><span class="articles-item__label-txt">сентябрь 13, 2020</span>
+									</div>
+									<img src="img/content/3.webp" alt="" class="articles-item__image" />
+								</a>
+								<a href="#" class="articles-item__heading heading heading_xs">Отпуск на природе: познайте дикую природу и кулинарные изыски</a>
+							</div>
+						</li>
+						<li class="all-articles__item articles-item">
+							<div class="articles-item__inner">
+								<a href="#" class="articles-item__image-wrap">
+									<div class="articles-item__label">
+										<span class="articles-item__label-txt">путеводители</span><span class="articles-item__label-txt">сентябрь 13, 2020</span>
+									</div>
+									<img src="img/content/3.webp" alt="" class="articles-item__image" />
+								</a>
+								<a href="#" class="articles-item__heading heading heading_xs">Отпуск на природе: познайте дикую природу и кулинарные изыски</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<svg display="none">
+				<symbol viewBox="0 0 32 32" id="arr-svg">
+					<path d="M23.5757 15.3474L9.72953 1.5012C9.36895 1.14062 8.78482 1.14062 8.42424 1.5012C8.06366 1.86178 8.06366 2.44591 8.42424 2.80649L21.6178 16L8.42424 29.1935C8.06366 29.5541 8.06366 30.1382 8.42424 30.4988C8.60453 30.6791 8.84011 30.7692 9.07689 30.7692C9.31366 30.7692 9.54924 30.6791 9.72953 30.4988L23.5757 16.6526C23.9363 16.2921 23.9363 15.7079 23.5757 15.3474Z" fill="#1D1D1B" />
+				</symbol>
+			</svg>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container container">
+				<ul class="footer__list">
+					<li class="footer__item">
+						<span class="footer__subtitle">узнать больше</span>
+						<ul class="footer__sublist">
+							<li class="footer__txt">
+								<a href="#" class="footer__txt-content">главная</a>
+							</li>
+							<li class="footer__txt">
+								<a href="#" class="footer__txt-content">блог</a>
+							</li>
+							<li class="footer__txt">
+								<a href="#" class="footer__txt-content">контакты</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__item">
+						<span class="footer__subtitle">путешествия</span>
+						<ul class="footer__sublist">
+							<li class="footer__txt">
+								<a href="#" class="footer__txt-content">СТРАНЫ</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__item">
+						<span class="footer__subtitle">языки</span>
+						<ul class="footer__sublist">
+							<li class="footer__txt">
+								<a href="#" class="footer__txt-content">русский</a>
+							</li>
+							<li class="footer__txt">
+								<a href="#" class="footer__txt-content">английский</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__item">
+						<span class="footer__subtitle">соц сети</span>
+						<ul class="footer__sublist">
+							<li class="footer__txt">
+								<a href="#" target="_blank" class="footer__txt-content">telegram</a>
+							</li>
+							<li class="footer__txt">
+								<a href="#" target="_blank" class="footer__txt-content">whatsapp</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<span class="footer__txt footer__txt_lower">@<span class="current-year"></span> webres travel</span>
+			</div>
+		</footer>
+
+	</div>
+
+	<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script defer src="js/app.js"></script>
+
+</body>
+
+</html>

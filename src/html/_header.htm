@@ -1,0 +1,32 @@
+<header class="header">
+  <div class="header__container container">
+    <nav data-move-to=".menu__container,.header__container" class="header__nav">
+      <a href="#" class="header__link _is-active">главная</a>
+      <a href="#" class="header__link">блог</a>
+      <a href="#" class="header__link">контакты</a>
+      <a href="#" class="header__link">о нас</a>
+      <a href="#" class="header__link">страны</a>
+    </nav>
+    <a href="/" class="header__logo"
+      ><img src="@img/logo.svg" alt="" class="header__logo-img"
+    /></a>
+    <ul data-move-to=".menu__container,.header__container" class="header__lang">
+      <li class="header__lang-item">
+        <input type="radio" checked name="lang" class="header__lang-input" />
+        <span class="header__lang-txt">ru</span>
+      </li>
+      <li class="header__lang-item">
+        <input type="radio" name="lang" class="header__lang-input" />
+        <span class="header__lang-txt">en</span>
+      </li>
+    </ul>
+    <button type="button" class="header__menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="header__menu menu">
+    <div class="menu__container container"></div>
+  </div>
+</header>

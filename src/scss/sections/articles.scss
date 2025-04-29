@@ -1,0 +1,156 @@
+.articles {
+  @media (min-width: 49.01em) {
+    margin-top: 20rem;
+  }
+  // .articles__container
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7rem;
+  }
+
+  // .articles__head
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .articles__heading
+
+  &__heading {
+  }
+
+  // .articles__btn
+
+  &__btn {
+  }
+
+  // .articles__items
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: span 2;
+    gap: 2rem;
+
+    @media (max-width: 49em) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8rem;
+    }
+  }
+
+  // .articles__item
+
+  &__item {
+  }
+}
+
+.articles-item {
+  // .articles-item__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+  }
+
+  // .articles-item__image-wrap
+
+  &__image-wrap {
+    position: relative;
+
+    padding: 1.5rem 2.5rem;
+
+    height: 69.4rem;
+    overflow: hidden;
+
+    @media (max-width: 49em) {
+      padding: 3rem;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        &::after {
+          background-color: #ffffff;
+        }
+      }
+    }
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      inset: 0;
+
+      background-color: #000000;
+
+      opacity: 0.2;
+      transition: background-color 0.5s ease-in-out;
+    }
+  }
+
+  // .articles-item__label
+
+  &__label {
+    position: relative;
+    z-index: 2;
+
+    padding: 1.5rem 2rem;
+
+    display: inline-flex;
+    align-items: center;
+    column-gap: 4rem;
+
+    background-color: #ffffff;
+  }
+
+  // .articles-item__label-txt
+
+  &__label-txt {
+    position: relative;
+
+    font-weight: 400;
+    font-size: 1.5rem;
+
+    @media (max-width: 49em) {
+      font-size: 2.5rem;
+    }
+
+    &:not(:last-child) {
+      &::after {
+        content: '|';
+
+        position: absolute;
+        top: 50%;
+        right: -2rem;
+
+        transform: translateY(-50%);
+      }
+    }
+
+    &:nth-child(2) {
+      opacity: 0.7;
+    }
+  }
+
+  // .articles-item__image
+
+  &__image {
+    position: absolute;
+    inset: 0;
+
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  // .articles-item__heading
+
+  &__heading {
+    margin-right: auto;
+  }
+}

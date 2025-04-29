@@ -1,0 +1,61 @@
+<section class="contacts">
+  <div class="contacts__container container">
+    <div class="contacts__aside">
+      <h1 class="contacts__heading heading"><span>контакты</span></h1>
+      <ul class="contacts__list">
+        <li class="contacts__list-item">
+          <span class="contacts__txt">e-mail адрес</span>
+          <a href="mailto:webres@gmail.com" class="contacts__txt"
+            >webres@gmail.com</a
+          >
+        </li>
+        <li class="contacts__list-item">
+          <span class="contacts__txt">телефон</span>
+          <a href="tel:+77777777777" class="contacts__txt"
+            >+7 (777) 777 77-77</a
+          >
+        </li>
+      </ul>
+    </div>
+    <form action="#" class="contacts__form">
+      <div class="contacts__field field">
+        <span class="field__subtitle">имя *</span>
+        <input
+          type="text"
+          required
+          placeholder="введите имя"
+          class="field__input" />
+      </div>
+      <div class="contacts__field field">
+        <span class="field__subtitle">фамилия *</span>
+        <input
+          type="text"
+          required
+          placeholder="введите фамилию"
+          class="field__input" />
+      </div>
+      <div class="contacts__field contacts__field_fw field">
+        <span class="field__subtitle">e-mail адрес *</span>
+        <input
+          type="email"
+          required
+          placeholder="введите e-mail"
+          class="field__input" />
+      </div>
+      <div class="contacts__field contacts__field_fw field">
+        <span class="field__subtitle">тема (необязательно)</span>
+        <input type="text" placeholder="введите тему" class="field__input" />
+      </div>
+      <div class="contacts__field contacts__field_fw field">
+        <span class="field__subtitle">сообщение *</span>
+        <textarea
+          placeholder="введите сообщение"
+          required
+          class="field__input"></textarea>
+      </div>
+      <button type="submit" class="contacts__btn btn">
+        <span class="btn__txt">отправить</span>
+      </button>
+    </form>
+  </div>
+</section>
